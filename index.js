@@ -15,13 +15,20 @@ function submit(){
     let waktu_akses = document.getElementById("ljam_akses").value;
     let url = document.getElementById("lurl").value;
 
-   
-
 
     const format = `${nama_belakang}, ${nama_depan} ${nama_tengah}. ${tahun_terbit}. "${judul_berita}", ${url}, diakses pada ${tanggal} ${bulan} ${tahun} pukul ${waktu_akses}`
     
-    display(format)
-
+    document.getElementById("nama_depan").textContent = nama_depan;
+    document.getElementById("nama_tengah").textContent = nama_tengah;
+    document.getElementById("nama_belakang").textContent = nama_belakang;
+    document.getElementById("tahun_terbit").textContent = tahun_terbit;
+    document.getElementById("tanggal").textContent = tanggal;
+    document.getElementById("bulan").textContent = bulan;
+    document.getElementById("tahun").textContent = tahun;
+    document.getElementById("waktu_akses").textContent = waktu_akses;
+    document.getElementById("url").textContent = url;
+    
+    document.getElementById("display").style.display = "block"
 }
 
 function display(input){

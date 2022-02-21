@@ -9,53 +9,76 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Pembuatan Format Daftar Pustaka Otomatis</h1>
+    <div class="title"><h2>Pembuatan Format Daftar Pustaka Otomatis</h2></div>
 
+
+    
     <div class="data">
-        <label for="ljudul">Judul Berita:</label><br>
-        <input type="text" id="ljudul" name="ljudul" ><br>
 
-        <label for="ldepan">Nama Depan Penulis:</label><br>
-        <input type="text" id="ldepan" name="ldepan" ><br>
+        <div class="top">
+            <label for="ljudul">Judul Berita</label><br>
+            <input type="text" id="ljudul" name="ljudul" size="55"><br>
 
-        <label for="ltengah">Nama Tengah Penulis:</label><br>
-        <input type="text" id="ltengah" name="ltengah" ><br>
+            <label for="lurl">URL</label><br>
+            <input type="text" id="lurl" name="lurl" size="55" ><br>
 
-        <label for="lbelakang">Nama Akhir Penulis:</label><br>
-        <input type="text" id="lbelakang" name="lbelakang" ><br>
 
-        <label for="ltahun_terbit">Tahun Tayang:</label><br>
-        <input type="text" id="ltahun_terbit" name="ltahun_terbit" maxlength="4" > <br>
 
-        <label for="ltanggal_akses">Tanggal Akses:</label><br>
-        <input type="text" id="ltanggal_akses" name="ltanggal_akses" maxlength="2" > <br>
-  
-        
-        <label for="lbulan_akses">Bulan Akses:</label><br>
-        <input type="text" id="lbulan_akses" name="lbulan_akses" list="bulan" > <br>
-        
-        <label for="ltahun_akses">Tahun Akses:</label><br>
-        <input type="text" id="ltahun_akses" name="ltahun_akses" list="tahun" ><br>
+        </div>
 
-        <label for="ljam_akses">Jam Akses:</label><br>
-        <input type="text" id="ljam_akses" name="ljam_akses"  placeholder="13:15" maxlength="5" > <br>
+        <div class="bottom">
 
-        <label for="lurl">URL:</label><br>
-        <input type="text" id="lurl" name="lurl" ><br>
+            <div class="left">
 
-     
+                <label for="ldepan">Nama Depan Penulis</label><br>
+                <input type="text" id="ldepan" name="ldepan" ><br>
 
-        <button onclick="submit()">Submit</button>
-     
-        <button onclick="copy()">Copy</button>
+                <label for="ltengah">Nama Tengah Penulis</label><br>
+                <input type="text" id="ltengah" name="ltengah" ><br>
 
-        <button onclick="clear1()">Clear</button>
+                <label for="lbelakang">Nama Akhir Penulis</label><br>
+                <input type="text" id="lbelakang" name="lbelakang" ><br>
+
+                <label for="ltahun_terbit">Tahun Tayang</label><br>
+                <input type="text" id="ltahun_terbit" name="ltahun_terbit" maxlength="4" > <br>
+            </div>
+
+            <div class="right">
+                <label for="ltanggal_akses">Tanggal Akses</label><br>
+                <input type="text" id="ltanggal_akses" name="ltanggal_akses" maxlength="2" > <br>
+                
+                <label for="lbulan_akses">Bulan Akses</label><br>
+                <input type="text" id="lbulan_akses" name="lbulan_akses" list="bulan" > <br>
+                
+                <label for="ltahun_akses">Tahun Akses</label><br>
+                <input type="text" id="ltahun_akses" name="ltahun_akses" list="tahun" ><br>
+
+                <label for="ljam_akses">Jam Akses</label><br>
+                <input type="text" id="ljam_akses" name="ljam_akses"  placeholder="13:15" maxlength="5" > <br>
+
+            </div>
+        </div>
+
+
+
     </div>
-
+    
     <div class="tampilan">
-        <p id="display" class="display"></p>
+        <p id="display" class="display">
+            <span id="nama_belakang"></span>, <span id="nama_depan"></span>, <span id="nama_tengah"></span>. <span id="tahun_terbit"></span>. <span id="judul_berita"></span>, <u><span class="url" id="url"></span></u>, diakses pada <span id="tanggal"></span> <span id="bulan"></span> <span id="tahun"></span> pukul <span id="waktu_akses"></span>
+    
+        </p>
    
     </div>
+
+    <div class="button-side">
+        <button class="submit" onclick="submit()">Submit</button>
+    
+        <button class="copy" onclick="copy()">Copy</button>
+
+        <button class="clear1" onclick="clear1()">Clear</button>
+    </div>
+
 
 
     <div class="datalist">

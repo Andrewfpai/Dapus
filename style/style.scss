@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+:root{
+    --myWhite: rgb(254, 249, 239);
+    --myOrange : rgb(255, 134, 94);
+    --myBlue : rgb(162, 210, 255);
+    --myYellow : rgb(254, 228, 64);
+
+    --Poppins:'Poppins', sans-serif;
+    --Open_Sans:'Open Sans', sans-serif;
+
+}
+
+body{
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+
+.title{
+    font-family: var(--Poppins);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.data{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    align-items: center;
+    
+
+    label{
+        font-family: var(--Poppins);
+        margin-bottom: -15px;
+        
+    
+    }
+
+    input{
+        background-color: #add7ff;        
+        border: 0;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-bottom: 10px;
+    }
+    .top{
+        margin-bottom: 20px;
+    }
+
+    .bottom{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .left, .right{
+        margin-right: 67px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+       
+        align-items: left;
+    }
+
+    .left{
+        margin-left: 65px;
+    }
+
+
+}
+
+.button-side{
+
+
+    .submit, .copy{
+        background-color: var(--myOrange);
+        border: 0;
+        color: white ;
+        padding: 10px 40px; 
+        border-radius: 20px;
+        font-size: 18px;
+        font-family: var(--Poppins);
+        margin-right: 7px;
+    }
+
+
+    .clear1{
+        background-color: var(--myBlue);
+        border: 0;
+        color: white ;
+        padding: 10px 40px; 
+        border-radius: 20px;
+        font-size: 18px;
+        font-family: var(--Poppins);
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+}
+
+.display{
+    display: none;
+}
+
+.url{
+    color: blue;
+
+}

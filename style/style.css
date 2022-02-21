@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+:root {
+  --myWhite: rgb(254, 249, 239);
+  --myOrange: rgb(255, 134, 94);
+  --myBlue: rgb(162, 210, 255);
+  --myYellow: rgb(254, 228, 64);
+  --Poppins:'Poppins', sans-serif;
+  --Open_Sans:'Open Sans', sans-serif;
+}
+
+body {
+  text-align: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: var(--Poppins);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.data {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.data label {
+  font-family: var(--Poppins);
+  margin-bottom: -15px;
+}
+
+.data input {
+  background-color: #add7ff;
+  border: 0;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 10px;
+}
+
+.data .top {
+  margin-bottom: 20px;
+}
+
+.data .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.data .left, .data .right {
+  margin-right: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+}
+
+.data .left {
+  margin-left: 65px;
+}
+
+.button-side .submit, .button-side .copy {
+  background-color: var(--myOrange);
+  border: 0;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: var(--Poppins);
+  margin-right: 7px;
+}
+
+.button-side .clear1 {
+  background-color: var(--myBlue);
+  border: 0;
+  color: white;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: var(--Poppins);
+}
+
+.button-side button:hover {
+  cursor: pointer;
+}
+
+.display {
+  display: none;
+}
+
+.url {
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
