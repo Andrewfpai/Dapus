@@ -103,14 +103,40 @@ body{
 
     button:hover{
         cursor: pointer;
+        opacity: 0.7;
     }
 }
 
 .display{
     display: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12;
+    
+}
+
+.display2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12;
 }
 
 .url{
-    color: blue;
+    color: #0000EE;
+    text-decoration: underline;
+    text-decoration-color: #0000EE;
 
 }
+
+.box{
+    margin: 0 auto;
+    text-align: left;
+    max-width: 800px;
+    height: 70px;
+    border : 1px solid black;
+    margin-bottom: 10px;
+    margin-top: -10px;
+    
+}
+
+
+

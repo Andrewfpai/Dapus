@@ -48,7 +48,7 @@
                 <input type="text" id="ltanggal_akses" name="ltanggal_akses" maxlength="2" > <br>
                 
                 <label for="lbulan_akses">Bulan Akses</label><br>
-                <input type="text" id="lbulan_akses" name="lbulan_akses" list="bulan" > <br>
+                <input type="text" id="lbulan_akses" name="lbulan_akses" list="bulan" ><br>
                 
                 <label for="ltahun_akses">Tahun Akses</label><br>
                 <input type="text" id="ltahun_akses" name="ltahun_akses" list="tahun" ><br>
@@ -56,6 +56,29 @@
                 <label for="ljam_akses">Jam Akses</label><br>
                 <input type="text" id="ljam_akses" name="ljam_akses"  placeholder="13:15" maxlength="5" > <br>
 
+
+                <datalist id="bulan">
+                    <option>Januari</option>
+                    <option>Februari</option>
+                    <option>Maret</option>
+                    <option>April</option>
+                    <option>Mei</option>
+                    <option>Juni</option>
+                    <option>Juli</option>
+                    <option>Agustus</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>Desember</option>
+                </datalist>
+
+                <datalist id="tahun">
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                </datalist>
             </div>
         </div>
 
@@ -63,48 +86,19 @@
 
     </div>
     
-    <div class="tampilan">
-        <p id="display" class="display">
-            <span id="nama_belakang"></span>, <span id="nama_depan"></span>, <span id="nama_tengah"></span>. <span id="tahun_terbit"></span>. <span id="judul_berita"></span>, <u><span class="url" id="url"></span></u>, diakses pada <span id="tanggal"></span> <span id="bulan"></span> <span id="tahun"></span> pukul <span id="waktu_akses"></span>
-    
-        </p>
-   
+    <div class="tampilan box">
+        <p id="display" class="display"><span id="nama_belakang"></span>, <span id="nama_depan"></span>, <span id="nama_tengah"></span>. <span id="tahun_terbit"></span>. <span id="judul_berita"></span>, <span class="url" id="url"></span>, diakses pada <span id="tanggal"></span> <span id="bulan_akses"></span> <span id="tahun_akses"></span> pukul <span id="waktu_akses"></span></p>
+        <p id="display2" class="display2"></p>
     </div>
 
     <div class="button-side">
         <button class="submit" onclick="submit()">Submit</button>
     
-        <button class="copy" onclick="copy()">Copy</button>
+        <button id="copy" class="copy" onclick="copy()">Copy</button>
 
         <button class="clear1" onclick="clear1()">Clear</button>
     </div>
 
-
-
-    <div class="datalist">
-        <datalist id="bulan">
-            <option>Januari</option>
-            <option>Februari</option>
-            <option>Maret</option>
-            <option>April</option>
-            <option>Mei</option>
-            <option>Juni</option>
-            <option>Juli</option>
-            <option>Agustus</option>
-            <option>September</option>
-            <option>Oktober</option>
-            <option>November</option>
-            <option>Desember</option>
-        </datalist>
-
-        <datalist id="tahun">
-            <option>2020</option>
-            <option>2021</option>
-            <option>2022</option>
-            <option>2023</option>
-            <option>2024</option>
-        </datalist>
-    </div>
 
 </body>
 </html>
