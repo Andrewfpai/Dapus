@@ -141,4 +141,28 @@ body {
   margin-bottom: 10px;
   margin-top: -10px;
 }
+
+::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.4;
+  font-family: var(--Open_Sans);
+}
+
+:-ms-input-placeholder {
+  color: black;
+  opacity: 0.4;
+  font-family: var(--Open_Sans);
+}
+
+::-ms-input-placeholder {
+  color: black;
+  opacity: 0.4;
+  font-family: var(--Open_Sans);
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.4;
+  font-family: var(--Open_Sans);
+}
 /*# sourceMappingURL=style.css.map */

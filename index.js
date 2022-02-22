@@ -32,9 +32,11 @@ function submit(){
 
     
 
-    if (url.length == 0 || nama_depan.length ==0 || nama_tengah.length==0 || nama_belakang.length==0 || tahun_terbit.length==0 || tanggal.length==0 || bulan.length==0 || tahun.length==0 || waktu_akses.length==0){
+    if (url.length == 0 || tahun_terbit.length==0 || tanggal.length==0 || bulan.length==0 || tahun.length==0 || waktu_akses.length==0){
         document.getElementById("display2").textContent = "Format Belum Lengkap, silakan lengkapi kembali!"
         document.getElementById("display").style.display = "none"
+        document.getElementById("display2").style.display = "block"
+
     } else {
         document.getElementById("display").style.display = "block"
         document.getElementById("display2").style.display = "none"
