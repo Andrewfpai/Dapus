@@ -53,7 +53,9 @@ function clear1(){
         elements[i].value = "";
     }
 
-    document.getElementById("hasil").textContent = " "
+    document.getElementById("display").style.display = "none"
+    document.getElementById("display2").style.display = "none"
+  
   
 }
 
