@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+
+
+:root{
+    --Arvo: 'Arvo', serif;
+}
+
+.heading{
+    font-family: var(--Arvo);
+    font-size: 48px;
+
+  }
+
+.link{
+    color: #1155ccff;
+    text-decoration: underline;
+}
+
+.placeholder1{
+    opacity: 40%;
+
+}
+
+.box-title{
+    color: #A0AEC0;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.copyIcon{
+    position: absolute;
+    margin-right: -27em;
+    margin-top: -10px;
+    z-index: 2;
+    cursor: pointer;
+    transform: scale(1.05);
+    :hover{
+        opacity: 40%;
+        transform : scale(1.05)
+    }
+}
+
+.text-format{
+    font-family: "Times New Roman";
+}
+
+.CheckCircleIcon{
+    position: absolute;
+    margin-right: -27em;
+    margin-top: -10px;
+    z-index: 3;
+    transform: scale(1.05);
+}
+
+.version{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
