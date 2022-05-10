@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Dapus/static/css/main.f3d62794.css",
-    "main.js": "/Dapus/static/js/main.2edd8cff.js",
+    "main.css": "/Dapus/static/css/main.e3a6e88f.css",
+    "main.js": "/Dapus/static/js/main.5d66dad4.js",
     "static/js/787.37e99ac5.chunk.js": "/Dapus/static/js/787.37e99ac5.chunk.js",
     "static/media/Illustration.svg": "/Dapus/static/media/Illustration.b1c67f7ced45f4fe9ced6e9ede7b950c.svg",
     "index.html": "/Dapus/index.html",
-    "main.f3d62794.css.map": "/Dapus/static/css/main.f3d62794.css.map",
-    "main.2edd8cff.js.map": "/Dapus/static/js/main.2edd8cff.js.map",
+    "main.e3a6e88f.css.map": "/Dapus/static/css/main.e3a6e88f.css.map",
+    "main.5d66dad4.js.map": "/Dapus/static/js/main.5d66dad4.js.map",
     "787.37e99ac5.chunk.js.map": "/Dapus/static/js/787.37e99ac5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3d62794.css",
-    "static/js/main.2edd8cff.js"
+    "static/css/main.e3a6e88f.css",
+    "static/js/main.5d66dad4.js"
   ]
 }
