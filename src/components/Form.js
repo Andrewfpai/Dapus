@@ -104,11 +104,16 @@ function Form() {
 
       const copy = () => {
         
+        if (!isSubmitted){
+
+      } else{
         navigator.clipboard.writeText(`${namaPenulis}. ${tahun}. "${judul}". ${link}, diakses pada ${tanggal} pukul ${jam}`)
         setIsCopied(true)
         setTimeout(() => {
           setIsCopied(false)
         }, 2000)
+      }
+        
 
       }
 
@@ -190,14 +195,20 @@ function Form() {
 
         
 
-        <Box w='65%' bg='darkBlue' >
+        <Box
+        width={{ base: "100%", lg: "65%" }}
+         bg='darkBlue' >
 
-            <Stack justifyContent='center' mt='32px' spacing={5} mx={'auto'} maxW={'xl'}>
+            <Stack justifyContent='center' mt='32px' spacing={5} mx={'auto'} maxW={{ base: "90%", md:"70%"}} textAlign={'center'}>
                 {/* Bagian Heading/atas */}
-                <Flex justifyContent='center'>
+                <Flex justifyContent='center' textAlign={'center'}>
 
                 <VStack color='white'>
-                <Heading class='heading'>DAPUS OTOMATIS</Heading>
+                <Heading class='heading'
+                
+              
+                
+                >DAPUS OTOMATIS</Heading>
       
                 </VStack>
                
@@ -205,8 +216,8 @@ function Form() {
 
                 </Flex>
 
-           
-                <Stack spacing={5} color='white'>
+                
+                <Stack spacing={5} color='white' maxW={{ base: "100%"}} justifyContent='center' textAlign={'center'} className="test">
                   
                    
                     <Input placeholder='Judul Berita' value={judul} onChange={handleChange1}/>
@@ -225,23 +236,29 @@ function Form() {
                       <Input placeholder='Tahun Tayang (eg: 2022)' value={tahun} onChange={handleChange6}/>
                     </HStack>
 
-                    <Flex spacing={5}>
-                        <Stack alignItems='left' justifyContent='left' ml={0} spacing={3}>
+                    <Flex spacing={5}  flexDirection={{base:'column', md:'row'}}>
+                        <Flex alignItems='left' justifyContent='left' ml={0} gap={2} flexDirection={{base:'row', md:'column'}} mb={{base:'20px', md:'0px'}}>
                        
+                        
                             <Button variant='primary' size='md' w='100px' ml={0} onClick={onSubmit}>Submit</Button>
-                            <Button variant='secondary' size='md' w='100px' mt={0} onClick={clear}>Clear</Button>
+                            <Spacer/>
+                            <Button variant='secondary' size='md' w='100px' mt={0} onClick={clear} >Clear</Button>
+                            <Spacer/>
                             <Button variant='primary' size='md' w='100px' onClick={fill}>Test</Button>
-                        </Stack>
-                        <Box ml={5} p={4} pr={5} BorderColor="green" w='100%' borderWidth='1px' borderRadius='md' bg='white' color='black' >
-                          <Flex justifyContent='center'>
+                        </Flex>
+
+                        <Box ml={{md:'5'}} pl={4} pt={1} pr={5} pb={1} BorderColor="green" w='100%' borderWidth='1px' borderRadius='md' bg='white' color='black' textAlign={'left'} minH={'100px'}>
+                          <Flex justifyContent='right' mb={-3}>
                           {isCopied ? (
                             <Tooltip hasArrow label='Copied'>
                             <CheckCircleIcon  w='{10}' className='CheckCircleIcon' color='black' isDisabled/>
                           </Tooltip>
             ) : (<CopyIcon  w='{10}' className='copyIcon' color='black' onClick={copy} role='img' />)}
                           </Flex>
+                        
                           
                           <div className="data-item-information" onChange={dataItem}>{renderContent()}</div>
+                         
                           </Box>
 
                           
@@ -260,7 +277,10 @@ function Form() {
 
         </Box>
 
-        <Box w='35%' bg='green'>
+        <Box 
+        w={{ base: "0%", lg: "35%" }}
+        bg='green'
+        display={{ base: "none", lg: "block" }}>
 
         </Box>
 
